@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "updated": "2026-11-25",
+  "network": {
+    "blockHosts": [
+      "doubleclick.net",
+      "googlesyndication.com",
+      "googleadservices.com",
+      "googletagservices.com",
+      "googletagmanager.com",
+      "google-analytics.com",
+      "adservice.google.com",
+      "imasdk.googleapis.com",
+      "pagead2.googlesyndication.com",
+      "ads.youtube.com"
+    ],
+    "blockUrlContains": [
+      "youtube.com/pagead/",
+      "youtube.com/api/stats/ads",
+      "youtube.com/ptracking",
+      "youtube.com/get_midroll_info",
+      "youtube.com/pcs/activeview",
+      "youtube.com/youtubei/v1/player/ad_break",
+      "youtube.com/ad_data_204",
+      "google.com/pagead/",
+      "/pagead/conversion",
+      "/pagead/viewthroughconversion",
+      "/pagead/adview",
+      "/pagead/interaction"
+    ],
+    "allowUrlContains": [
+      "youtube.com/youtubei/v1/player?",
+      "youtube.com/youtubei/v1/next",
+      "youtube.com/api/stats/watchtime",
+      "youtube.com/api/stats/playback",
+      "youtube.com/api/stats/qoe"
+    ]
+  },
+  "prune": {
+    "keys": [
+      "adPlacements",
+      "playerAds",
+      "adSlots",
+      "adBreakHeartbeatParams",
+      "adBreakParams",
+      "adParams"
+    ],
+    "nestedObjects": [
+      "playerResponse"
+    ],
+    "renderers": [
+      "adSlotRenderer",
+      "adSlotMetadata",
+      "promotedSparklesWebRenderer",
+      "promotedSparklesTextSearchRenderer",
+      "promotedVideoRenderer",
+      "compactPromotedVideoRenderer",
+      "promotedVideoInlineMutedRenderer",
+      "searchPyvRenderer",
+      "displayAdRenderer",
+      "inFeedAdLayoutRenderer",
+      "adsEngagementPanelContentRenderer",
+      "bannerPromoRenderer",
+      "statementBannerRenderer",
+      "brandVideoSingletonRenderer",
+      "brandVideoShelfRenderer",
+      "primetimePromoRenderer",
+      "companionAdRenderer",
+      "actionCompanionAdRenderer",
+      "imageCompanionAdRenderer",
+      "playerLegacyDesktopWatchAdsRenderer",
+      "linearAdSequenceRenderer",
+      "instreamVideoAdRenderer",
+      "adActionInterstitialRenderer"
+    ],
+    "apiPaths": [
+      "/youtubei/v1/player",
+      "/youtubei/v1/next",
+      "/youtubei/v1/browse",
+      "/youtubei/v1/search",
+      "/youtubei/v1/reel/",
+      "/youtubei/v1/get_watch",
+      "/youtubei/v1/guide"
+    ],
+    "globals": [
+      "ytInitialPlayerResponse",
+      "ytInitialData",
+      "ytInitialReelWatchSequenceResponse"
+    ]
+  },
+  "skip": {
+    "player": ".html5-video-player, #movie_player",
+    "adShowingClasses": [
+      "ad-showing",
+      "ad-interrupting"
+    ],
+    "skipButtons": [
+      ".ytp-ad-skip-button",
+      ".ytp-ad-skip-button-modern",
+      ".ytp-skip-ad-button",
+      ".ytp-ad-skip-button-container button",
+      ".ytp-ad-skip-button-slot button",
+      "button[class*='skip-ad']",
+      "button[class*='ad-skip']"
+    ],
+    "closeButtons": [
+      ".ytp-ad-overlay-close-button",
+      ".ytp-ad-overlay-close-container"
+    ],
+    "playbackRate": 16
+  },
+  "cosmetic": [
+    "ad-slot-renderer",
+    "ytm-ad-slot-renderer",
+    "ytm-promoted-sparkles-web-renderer",
+    "ytm-promoted-sparkles-text-search-renderer",
+    "ytm-promoted-video-renderer",
+    "ytm-compact-promoted-video-renderer",
+    "ytm-companion-ad-renderer",
+    "ytm-companion-slot",
+    "ytm-in-feed-ad-layout-renderer",
+    "ytm-display-ad-renderer",
+    "ytm-search-pyv-renderer",
+    "ytm-banner-promo-renderer",
+    "ytm-statement-banner-renderer",
+    "ytm-brand-video-singleton-renderer",
+    "ytm-brand-video-shelf-renderer",
+    "ytm-primetime-promo-renderer",
+    "ytm-merch-shelf-renderer",
+    "ytm-rich-item-renderer:has(> ad-slot-renderer)",
+    "ytm-rich-item-renderer:has(ytm-ad-slot-renderer)",
+    "ytm-rich-section-renderer:has(ytm-statement-banner-renderer)",
+    "ytm-item-section-renderer:has(> lazy-list > ad-slot-renderer:only-child)",
+    "ytm-item-section-renderer:has(ytm-promoted-sparkles-web-renderer)",
+    "ytm-engagement-panel-section-list-renderer[target-id='engagement-panel-ads']",
+    "#player-ads",
+    "#masthead-ad",
+    ".ytp-ad-overlay-container",
+    ".ytp-ad-overlay-slot",
+    ".ytp-ad-image-overlay",
+    ".ytp-featured-product",
+    ".ytp-suggested-action",
+    ".ytm-promoted-sparkles-web-renderer",
+    ".companion-ad-container",
+    ".mobile-topbar-header-ad",
+    "ytm-paid-content-overlay-renderer"
+  ]
+}
