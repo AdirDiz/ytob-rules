@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-11-27",
   "network": {
     "blockHosts": [
@@ -120,6 +120,25 @@
     ".ytp-ad-image-overlay",
     ".ytp-featured-product",
     ".ytp-suggested-action",
-    ".ytp-paid-content-overlay"
+    ".ytp-paid-content-overlay",
+    "ytmusic-nav-bar a[href^='intent:']",
+    "ytmusic-nav-bar a[href*='play.google.com']",
+    "ytmusic-nav-bar a[href*='app=m']"
+  ],
+  "hideText": [
+    {
+      "scope": "ytmusic-nav-bar, ytmusic-app-layout #nav-bar-background, header, #nav-bar, ytmusic-app",
+      "items": "a, button, yt-button-renderer, ytmusic-button-renderer, yt-button-shape, tp-yt-paper-button",
+      "texts": [
+        "Открыть приложение",
+        "Открыть в приложении",
+        "Open app",
+        "Open App",
+        "Open in app",
+        "Get the app",
+        "Відкрити додаток",
+        "Відкрити застосунок"
+      ]
+    }
   ]
 }
