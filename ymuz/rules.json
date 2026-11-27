@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "updated": "2026-11-27",
+  "network": {
+    "blockHosts": [
+      "doubleclick.net",
+      "googlesyndication.com",
+      "googleadservices.com",
+      "googletagservices.com",
+      "googletagmanager.com",
+      "google-analytics.com",
+      "adservice.google.com",
+      "pagead2.googlesyndication.com",
+      "ads.youtube.com"
+    ],
+    "blockUrlContains": [
+      "youtube.com/pagead/",
+      "youtube.com/api/stats/ads",
+      "youtube.com/ptracking",
+      "youtube.com/pcs/activeview",
+      "youtube.com/ad_data_204",
+      "google.com/pagead/",
+      "/pagead/conversion",
+      "/pagead/viewthroughconversion",
+      "/pagead/adview",
+      "/pagead/interaction"
+    ],
+    "allowUrlContains": [
+      "youtube.com/youtubei/v1/player?",
+      "youtube.com/youtubei/v1/next",
+      "youtube.com/api/stats/watchtime",
+      "youtube.com/api/stats/playback",
+      "youtube.com/api/stats/qoe"
+    ]
+  },
+  "prune": {
+    "keys": [
+      "adPlacements",
+      "playerAds",
+      "adSlots",
+      "adBreakHeartbeatParams",
+      "adBreakParams",
+      "adParams"
+    ],
+    "nestedObjects": [
+      "playerResponse"
+    ],
+    "renderers": [
+      "adSlotRenderer",
+      "adSlotMetadata",
+      "promotedSparklesWebRenderer",
+      "promotedSparklesTextSearchRenderer",
+      "promotedVideoRenderer",
+      "compactPromotedVideoRenderer",
+      "promotedVideoInlineMutedRenderer",
+      "searchPyvRenderer",
+      "displayAdRenderer",
+      "inFeedAdLayoutRenderer",
+      "adsEngagementPanelContentRenderer",
+      "bannerPromoRenderer",
+      "statementBannerRenderer",
+      "brandVideoSingletonRenderer",
+      "brandVideoShelfRenderer",
+      "primetimePromoRenderer",
+      "companionAdRenderer",
+      "actionCompanionAdRenderer",
+      "imageCompanionAdRenderer",
+      "playerLegacyDesktopWatchAdsRenderer",
+      "linearAdSequenceRenderer",
+      "instreamVideoAdRenderer",
+      "adActionInterstitialRenderer"
+    ],
+    "apiPaths": [
+      "/youtubei/v1/player",
+      "/youtubei/v1/next",
+      "/youtubei/v1/browse",
+      "/youtubei/v1/search",
+      "/youtubei/v1/music/get_queue",
+      "/youtubei/v1/get_watch"
+    ],
+    "globals": [
+      "ytInitialPlayerResponse",
+      "ytInitialData"
+    ]
+  },
+  "skip": {
+    "player": ".html5-video-player, #movie_player",
+    "adShowingClasses": [
+      "ad-showing",
+      "ad-interrupting"
+    ],
+    "skipButtons": [
+      ".ytp-ad-skip-button",
+      ".ytp-ad-skip-button-modern",
+      ".ytp-skip-ad-button",
+      ".ytp-ad-skip-button-container button",
+      ".ytp-ad-skip-button-slot button",
+      "button[class*='skip-ad']",
+      "button[class*='ad-skip']"
+    ],
+    "closeButtons": [
+      ".ytp-ad-overlay-close-button",
+      ".ytp-ad-overlay-close-container"
+    ],
+    "playbackRate": 16
+  },
+  "cosmetic": [
+    "ytmusic-mealbar-promo-renderer",
+    "ytmusic-statement-banner-renderer",
+    "ytmusic-popup-container tp-yt-paper-dialog:has(ytmusic-mealbar-promo-renderer)",
+    "tp-yt-paper-dialog:has(> ytmusic-mealbar-promo-renderer)",
+    "ytmusic-brand-promo-renderer",
+    "ytmusic-carousel-shelf-renderer:has(ytmusic-statement-banner-renderer)",
+    "ytmusic-section-list-renderer > #contents > ytmusic-statement-banner-renderer",
+    "ad-slot-renderer",
+    "ytd-ad-slot-renderer",
+    "#player-ads",
+    ".ytp-ad-overlay-container",
+    ".ytp-ad-overlay-slot",
+    ".ytp-ad-image-overlay",
+    ".ytp-featured-product",
+    ".ytp-suggested-action",
+    ".ytp-paid-content-overlay"
+  ]
+}

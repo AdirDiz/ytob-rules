@@ -14,3 +14,11 @@ with a higher version than the one it already has. The same file is bundled in t
 what is here. CSS applies at once, JS after the page reloads (the app reloads it when the file
 changed). Hints and examples are inside the files. Delete a file to go back to the app's
 built-in copy. In the app: shield → "Как поправить свой CSS и JS…" opens the GitHub editor.
+
+## Ymuz (YouTube Music)
+
+The folder `ymuz/` holds the same three files for the Ymuz app (music.youtube.com,
+`AdirDiz/Ymuz`): `ymuz/rules.json`, `ymuz/user.css`, `ymuz/user.js`. Its "Обновить фильтры" downloads
+`https://raw.githubusercontent.com/AdirDiz/ytob-rules/main/ymuz/rules.json` and the user files next to
+it. Same rule: increase `version` in `ymuz/rules.json` to publish a change, and keep it in sync with
+`app/src/main/assets/rules.json` in `Ymuz`.
